@@ -238,7 +238,6 @@ function reset() {
 
 function outOfPins() {
   gameOver = true;
-  $("#lose").css("display", "inline-block");
   resetGame();
 }
 
