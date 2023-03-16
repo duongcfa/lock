@@ -12,7 +12,7 @@ var minRot = -90,
   pinDamage = 20,
   pinHealth = 100,
   pinDamageInterval = 150,
-  numPins = 5,
+  numPins = 3,
   userPushingCyl = false,
   gameOver = false,
   gamePaused = false,
@@ -239,12 +239,12 @@ function reset() {
 function outOfPins() {
   gameOver = true;
   $("#lose").css("display", "inline-block");
-  reset();
+  resetGame();
 }
 
 function unlock() {
   gameOver = true;
-  reset();
+  resetGame();
 }
 
 //UTIL
